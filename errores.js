@@ -35,7 +35,6 @@ function validarContactoExistente(req,res,next){
         next();
     }
 }
-
 app.use(agregarLog);//usar el middleware para todos los metodos
 
 app.get("/demo",(req, res) => { // si se quiere usar para solo un metodo, se llama despues de la ruta
